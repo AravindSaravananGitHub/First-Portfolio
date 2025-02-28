@@ -20,7 +20,7 @@
     "sass": "^1.64.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/AravindSaravananGitHub/First-Portfolio",
+  "homepage": "https://aravindsaravanangithub.github.io/First-Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
