@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AravindSaravananGitHub/First-Portfolio/static/css/main.be3a1b06.css",
-    "main.js": "/AravindSaravananGitHub/First-Portfolio/static/js/main.52dc5e38.js",
-    "index.html": "/AravindSaravananGitHub/First-Portfolio/index.html",
-    "main.be3a1b06.css.map": "/AravindSaravananGitHub/First-Portfolio/static/css/main.be3a1b06.css.map",
-    "main.52dc5e38.js.map": "/AravindSaravananGitHub/First-Portfolio/static/js/main.52dc5e38.js.map"
+    "main.css": "/First-Portfolio/static/css/main.be3a1b06.css",
+    "main.js": "/First-Portfolio/static/js/main.c95db99b.js",
+    "index.html": "/First-Portfolio/index.html",
+    "main.be3a1b06.css.map": "/First-Portfolio/static/css/main.be3a1b06.css.map",
+    "main.c95db99b.js.map": "/First-Portfolio/static/js/main.c95db99b.js.map"
   },
   "entrypoints": [
     "static/css/main.be3a1b06.css",
-    "static/js/main.52dc5e38.js"
+    "static/js/main.c95db99b.js"
   ]
 }
