@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import "./home.scss";
 import { init } from "ityped";
 import { FaAngleDown, FaFileDownload } from "react-icons/fa";
+import alterImage from "../../image/new.png";
 
 const Home = ({ menu, setMenu }) => {
   const resumePath = "image/Aravind-S-DreamJob.pdf";
@@ -29,7 +30,7 @@ const Home = ({ menu, setMenu }) => {
     <div className='home' id='home' onClick={() => setMenu(false)}>
       <div className='left'>
         <div className='imageContainer'>
-          <img src='image/alter_1.png' alt='Loading' />
+          <img src={alterImage} alt='Loading' />
         </div>
       </div>
       <div className='right'>
