@@ -1,0 +1,178 @@
+@import "./../../../global.scss";
+
+.frontEnd {
+  width: 100%;
+  height: 100%;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .sub-heading {
+      flex: 0.1;
+      color: $darkColor;
+      text-shadow: 0.7px 0.7px 1px rgba(70, 69, 69, 0.5);
+      font-weight: 500;
+    }
+
+    .content {
+      flex: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      .skill-box {
+        width: 340px;
+        height: 60px;
+        margin: 15px;
+        display: flex;
+
+        .left {
+          flex: 0.8;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+
+          .control {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .h4 {
+              color: $bagroungColor;
+              text-shadow: 0.7px 0.7px 1px rgba(5, 5, 5, 0.5);
+              font-weight: 500;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+
+            .persentage {
+              color: $bagroungColor;
+              text-shadow: 0.7px 0.7px 1px rgba(5, 5, 5, 0.5);
+              font-weight: 500;
+              margin-top: 5px;
+              margin-bottom: 10px;
+            }
+          }
+
+          .bar {
+            width: 100%;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+              rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            position: relative;
+
+            .html-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+
+            .css-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+
+            .js-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 95%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+
+            .react-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 80%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+
+            .sass-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 70%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+            .tailwind-bar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 60%;
+              height: 100%;
+              border-radius: 30px;
+              background: rgb(241, 195, 222);
+              background: rgb(4, 234, 255);
+              background: $skill;
+            }
+          }
+        }
+
+        .right {
+          flex: 0.2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .logo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding-left: 5px;
+
+            &.logo-tailwind {
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              padding: 0 0 10px 10px;
+
+              img {
+                width: 90px;
+                height: 40px;
+              }
+            }
+
+            img {
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

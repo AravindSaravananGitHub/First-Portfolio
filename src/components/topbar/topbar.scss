@@ -1,0 +1,271 @@
+@import "./../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+.topbar {
+  width: 100%;
+  height: 65px;
+  background-color: $secondaryBG;
+  color: $darkColor;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  overflow-y: hidden;
+  transition: all 1s ease;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 18px;
+      margin-left: 10px;
+
+      .logo {
+        a {
+          text-decoration: none;
+          h2 {
+            color: $designColor;
+            font-size: 30px;
+            font-weight: 900;
+            font-family: "Dancing Script", cursive;
+            transition: all 1s ease-in;
+
+            &:hover {
+              color: $darkColor;
+            }
+          }
+        }
+      }
+
+      .mobile {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        transition: all 5s ease-in;
+
+        .icon {
+          font-size: 25px;
+          color: rgb(2, 211, 2);
+        }
+        span {
+          margin-left: 10px;
+          color: $darkColor;
+
+          a {
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 400;
+            transition: all 1s ease-in;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              width: 0;
+              height: 1px;
+              border-radius: 50%;
+              background-color: $designColor;
+              transition: all 1s ease-in;
+            }
+
+            &:hover {
+              color: $designColor;
+
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .email {
+        position: relative;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          font-size: 25px;
+          color: rgb(250, 135, 34);
+        }
+
+        span {
+          margin-left: 10px;
+
+          a {
+            text-decoration: none;
+            color: $darkColor;
+            font-weight: 400;
+            transition: all 1s ease-in;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              width: 0;
+              height: 1px;
+              border-radius: 50%;
+              background-color: $designColor;
+              transition: all 1s ease-in;
+            }
+
+            &:hover {
+              color: $designColor;
+
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .github {
+        position: relative;
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          font-size: 25px;
+        }
+        span {
+          margin-left: 10px;
+
+          a {
+            text-decoration: none;
+            color: $darkColor;
+            font-weight: 400;
+            transition: all 1s ease-in;
+
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              width: 0;
+              height: 1px;
+              border-radius: 50%;
+              background-color: $designColor;
+              transition: all 1s ease-in;
+            }
+
+            &:hover {
+              color: $designColor;
+
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      padding: 20px;
+      margin-right: 10px;
+
+      .burger {
+        width: 42px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+        overflow: hidden;
+
+        span {
+          width: 100%;
+          height: 3px;
+          color: $darkColor;
+          background-color: $darkColor;
+          border-radius: 50px;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+
+        .line1 {
+          width: 35%;
+        }
+        .lin2 {
+          width: 60%;
+        }
+        .line3 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $darkColor;
+    color: $bagroungColor;
+
+    .wrapper {
+      .left {
+        a {
+          color: $bagroungColor;
+          h2 {
+            color: $bagroungColor;
+
+            &:hover {
+              color: $designColor;
+            }
+          }
+        }
+        .mobile {
+          span {
+            a {
+              color: $bagroungColor;
+            }
+          }
+        }
+        .email {
+          span {
+            a {
+              color: $bagroungColor;
+            }
+          }
+        }
+        .github {
+          span {
+            a {
+              color: $bagroungColor;
+            }
+          }
+        }
+      }
+      .right {
+        .burger {
+          width: 32px;
+          align-items: flex-start;
+
+          span {
+            width: 100%;
+            height: 3px;
+            border-radius: 50%;
+
+            &:first-child {
+              background-color: $bagroungColor;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:last-child {
+              background-color: $bagroungColor;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

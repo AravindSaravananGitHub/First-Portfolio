@@ -1,0 +1,167 @@
+@import "./../../global.scss";
+
+.home {
+  background-color: $bagroungColor;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .imageContainer {
+      position: relative;
+      width: 590px;
+      height: 580px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $gradient;
+      border-radius: 50%;
+      float: right;
+      -webkit-box-shadow: -2px 3px 15px 3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -2px 3px 15px 3px rgba(0, 0, 0, 0.75);
+      box-shadow: -2px 3px 15px 3px rgba(0, 0, 0, 0.75);
+      animation: main_animation 8s ease-in-out infinite 1s;
+      overflow: hidden;
+
+      @keyframes main_animation {
+        0% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+        50% {
+          border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+        }
+        100% {
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        }
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        height: 90%;
+        z-index: 1;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+    .textContainer {
+      margin-bottom: 20px;
+      margin-left: 100px;
+
+      .textContent {
+        margin-bottom: 20px;
+
+        h1 {
+          font-size: 38px;
+          margin-bottom: 5px;
+          font-weight: 500;
+          color: $darkColor;
+          text-shadow: 0.7px 0.7px 1px rgba(70, 69, 69, 0.5);
+
+          .name {
+            font-size: 38px;
+            color: $designColor;
+            font-weight: 500;
+            text-shadow: 0.7px 0.7px 1px rgba(70, 69, 69, 0.5);
+          }
+        }
+        .iam {
+          font-size: 30px;
+          margin-bottom: 5px;
+          font-weight: 500;
+          color: $darkColor;
+          text-shadow: 0.7px 0.7px 1px rgba(70, 69, 69, 0.5);
+
+          span {
+            font-size: 30px;
+            color: $designColor;
+            font-weight: 500;
+          }
+
+          .ityped-cursor {
+            animation: Type 1s infinite;
+          }
+          @keyframes Type {
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+        }
+        h3 {
+          font-size: 28px;
+          margin-bottom: 5px;
+          font-weight: 500;
+          color: $darkColor;
+          text-shadow: 0.7px 0.7px 1px rgba(70, 69, 69, 0.5);
+        }
+      }
+    }
+
+    .downloadBtn {
+      padding: 0 0 10px 0;
+      a {
+        text-decoration: none;
+        border-radius: 20px;
+
+        button {
+          font-size: 18px;
+          padding: 10px 20px;
+          border: none;
+          outline: none;
+          border-radius: 20px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          font-weight: 500;
+          transition: all 1s ease;
+          background-color: $darkColor;
+          color: $bagroungColor;
+
+          span {
+            margin-right: 8px;
+          }
+
+          &:hover {
+            background-color: $designColor;
+            color: $bagroungColor;
+            padding: 15px 25px;
+          }
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      left: 40%;
+      bottom: 10px;
+
+      a {
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 300;
+        opacity: 0;
+        animation: blink 2s ease-in-out infinite;
+        color: $designColor;
+      }
+
+      @keyframes blink {
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
