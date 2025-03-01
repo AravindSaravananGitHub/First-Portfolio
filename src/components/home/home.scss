@@ -1,7 +1,7 @@
 @import "./../../global.scss";
 
 .home {
-  background-color: $bagroungColor;
+  background-color: $backgroundColor;
   display: flex;
 
   .left {
@@ -128,7 +128,7 @@
           font-weight: 500;
           transition: all 1s ease;
           background-color: $darkColor;
-          color: $bagroungColor;
+          color: $backgroundColor;
 
           span {
             margin-right: 8px;
@@ -136,7 +136,7 @@
 
           &:hover {
             background-color: $designColor;
-            color: $bagroungColor;
+            color: $backgroundColor;
             padding: 15px 25px;
           }
         }

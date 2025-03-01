@@ -3,7 +3,7 @@
 .education {
   width: 100%;
   height: 100%;
-  background-color: $bagroungColor;
+  background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,10 +35,10 @@
       align-items: center;
 
       & :first-child {
-        border-right: 4px solid $bagroungColor;
+        border-right: 4px solid $backgroundColor;
       }
       & :last-child {
-        border-left: 4px solid $bagroungColor;
+        border-left: 4px solid $backgroundColor;
       }
 
       li {
@@ -60,7 +60,7 @@
 
         &.active {
           background: $gradient;
-          color: $bagroungColor;
+          color: $backgroundColor;
         }
         &.none {
           background-color: $secondaryBG;

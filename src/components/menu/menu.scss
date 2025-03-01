@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   right: -400px;
-  z-index: 1;
+  z-index: 98;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@
         font-size: 20px;
         font-weight: 300;
         position: relative;
-        color: $bagroungColor;
+        color: $backgroundColor;
 
         &::before {
           content: "";

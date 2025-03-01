@@ -3,12 +3,12 @@
 
 .topbar {
   width: 100%;
-  height: 65px;
+  height: 60px;
   background-color: $secondaryBG;
   color: $darkColor;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   overflow-y: hidden;
   transition: all 1s ease;
@@ -24,15 +24,23 @@
       padding: 15px 18px;
       margin-left: 10px;
 
+      @media only screen and (max-width: 480px) {
+        padding: 20px 0.3rem;
+      }
+      @media only screen and (max-width: 1000px) {
+        padding: 20px 0.3rem;
+      }
+
       .logo {
         a {
           text-decoration: none;
           h2 {
             color: $designColor;
-            font-size: 30px;
-            font-weight: 900;
+            font-size: 25px;
+            font-weight: bolder;
             font-family: "Dancing Script", cursive;
             transition: all 1s ease-in;
+            text-shadow: $textPinkShadow;
 
             &:hover {
               color: $darkColor;
@@ -46,6 +54,14 @@
         display: flex;
         align-items: center;
         transition: all 5s ease-in;
+
+        @media only screen and (max-width: 480px) {
+          display: none;
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 80%;
+          display: none;
+        }
 
         .icon {
           font-size: 25px;
@@ -90,6 +106,14 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: 480px) {
+          display: none;
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 80%;
+          display: none;
+        }
+
         .icon {
           font-size: 25px;
           color: rgb(250, 135, 34);
@@ -132,6 +156,14 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: 480px) {
+          display: none;
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 80%;
+          display: none;
+        }
+
         .icon {
           font-size: 25px;
         }
@@ -171,6 +203,13 @@
       padding: 20px;
       margin-right: 10px;
 
+      @media only screen and (max-width: 480px) {
+        padding: 20px 0.3rem;
+      }
+      @media only screen and (max-width: 1000px) {
+        padding: 20px 0.3rem;
+      }
+
       .burger {
         width: 42px;
         height: 25px;
@@ -206,14 +245,16 @@
 
   &.active {
     background-color: $darkColor;
-    color: $bagroungColor;
+    color: $backgroundColor;
 
     .wrapper {
       .left {
         a {
-          color: $bagroungColor;
+          color: $backgroundColor;
+          
           h2 {
-            color: $bagroungColor;
+            color: $backgroundColor;
+            text-shadow: $textWhiteShadow;
 
             &:hover {
               color: $designColor;
@@ -223,21 +264,21 @@
         .mobile {
           span {
             a {
-              color: $bagroungColor;
+              color: $backgroundColor;
             }
           }
         }
         .email {
           span {
             a {
-              color: $bagroungColor;
+              color: $backgroundColor;
             }
           }
         }
         .github {
           span {
             a {
-              color: $bagroungColor;
+              color: $backgroundColor;
             }
           }
         }
@@ -253,14 +294,14 @@
             border-radius: 50%;
 
             &:first-child {
-              background-color: $bagroungColor;
+              background-color: $backgroundColor;
               transform: rotate(45deg);
             }
             &:nth-child(2) {
               opacity: 0;
             }
             &:last-child {
-              background-color: $bagroungColor;
+              background-color: $backgroundColor;
               transform: rotate(-45deg);
             }
           }

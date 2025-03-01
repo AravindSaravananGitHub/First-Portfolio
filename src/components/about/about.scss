@@ -44,7 +44,7 @@
       }
 
       p {
-        color: $bagroungColor;
+        color: $backgroundColor;
         padding-top: 5px;
         text-align: justify;
         font-size: 17px;
@@ -92,7 +92,7 @@
 
           a {
             text-decoration: none;
-            color: $bagroungColor;
+            color: $backgroundColor;
             font-size: 25px;
             transition: all 0.5s ease;
           }
@@ -141,7 +141,7 @@
         .container {
           width: 85%;
           height: 85%;
-          background-color: $bagroungColor;
+          background-color: $backgroundColor;
           border-radius: 10px;
           display: flex;
           justify-content: center;
@@ -163,7 +163,7 @@
             border-radius: 40px;
             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
               rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-            color: $bagroungColor;
+            color: $backgroundColor;
             position: absolute;
             bottom: -100px;
             display: flex;

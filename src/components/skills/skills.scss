@@ -67,7 +67,7 @@
             justify-content: center;
             border-radius: 50%;
             background-color: $darkColor;
-            color: $bagroungColor;
+            color: $backgroundColor;
             font-size: 28px;
             z-index: 3;
             transition: all 0.6s ease;
@@ -85,11 +85,11 @@
             width: 83%;
             height: 63px;
             font-size: 30px;
-            background-color: $bagroungColor;
+            background-color: $backgroundColor;
             color: $primary;
 
             &:hover {
-              background-color: $bagroungColor;
+              background-color: $backgroundColor;
               color: $primary;
             }
           }

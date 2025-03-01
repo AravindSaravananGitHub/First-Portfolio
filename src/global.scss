@@ -1,6 +1,6 @@
 $darkColor: #3c3d42;
 $designColor: #ff2790;
-$bagroungColor: #f6f8e2;
+$backgroundColor: #f6f8e2;
 $secondaryBG: #e0ddca;
 $gradient: linear-gradient(
   45deg,
@@ -16,15 +16,17 @@ $skill: linear-gradient(
   rgba(252, 74, 152, 1) 83%,
   rgba(253, 49, 91, 1) 100%
 );
+$textPinkShadow: 2px 2px 4px rgba(255, 0, 100, 0.4);
+$textWhiteShadow: 0 0 8px rgba(255, 255, 255, 0.5);
 
 // $darkColor: #17252a;
 // $designColor: #3aafa9;
-// $bagroungColor: #feffff;
+// $backgroundColor: #feffff;
 // $secondaryBG: #def2f1;
 
 /* $darkColor: #5a5560;
 $designColor: #faed26;
-$bagroungColor: #9d8d8f;
+$backgroundColor: #9d8d8f;
 $secondaryBG: #46344e;
 $textColor: #fff;
 $thirdBG: #9b786f; */
