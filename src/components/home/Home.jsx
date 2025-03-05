@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import "./home.scss";
 import { init } from "ityped";
 import { FaAngleDown, FaFileDownload } from "react-icons/fa";
-import alterImage from "../../image/new.png";
+import alterImage from "../../image/Profile2025.png";
 
 const Home = ({ menu, setMenu }) => {
   const resumePath = "image/Aravind-S-DreamJob.pdf";
