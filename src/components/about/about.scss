@@ -151,7 +151,7 @@
           img {
             width: 95%;
             height: 95%;
-            background-size: contain;
+            background-size: cover;
             border-radius: 10px 30px 10px 30px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           }
@@ -213,4 +213,18 @@
       }
     }
   }
+}
+
+
+@media (min-width: 320px) and (max-width:768px) {
+
+  .about {
+    height: 100%;
+
+    .content-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
 }

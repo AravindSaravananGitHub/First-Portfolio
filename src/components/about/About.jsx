@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import { FaInstagram, FaTwitter, FaSnapchatGhost } from "react-icons/fa";
+import aboutImage from "../../image/about.jpg";
 
 const About = ({ menu, setMenu }) => {
   return (
@@ -61,7 +62,7 @@ const About = ({ menu, setMenu }) => {
         <div className='right'>
           <div className='shadow'>
             <div className='container'>
-              <img src='image/about.jpg' alt='Loading..' />
+              <img src={aboutImage} alt='Loading...' />
               <div className='details'>
                 <h3>Aravind S</h3>
                 <h4>Web Developer</h4>
